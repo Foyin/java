@@ -1,4 +1,17 @@
 //UDP server
+/*
+Each message is sent as a packet. Each packet contains:
+- the data of the message (i.e., the message itself)
+- the length of the message (i.e., the number of bytes)
+- the address of the sender (as an InetAddress)
+- the port of the sender
+
+The code for packaging and sending an outgoing packet involves creating a DatagramSocket
+and then constructing a DatagramPacket. The packet requires an array of bytes, as well as
+the address and port in which to send to. A byte array can be obtained from most objects by
+sending a getBytes() message to the object. Finally, a send() message is used to send the
+packet: 
+*/
 
 import java.net.*;
 import java.io.*;
