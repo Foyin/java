@@ -1,7 +1,7 @@
 /*
 TCP server
 
-Normally, however, we actually wrap these input/output streams with text-based, datatypebased
+Normally, we wrap the input/output streams with text-based, datatypebased
 or object-based wrappers:
 
 ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
