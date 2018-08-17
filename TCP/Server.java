@@ -13,8 +13,7 @@ PrintWriter out = new PrintWriter(socket.getOutputStream());
 DataInputStream in = new DataInputStream(socket.getInputStream());
 DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 
-You may look back at the notes on file I/O to see how to write to the streams. However, one
-more point ... when data is sent through the output stream, the flush() method should be sent
+When data is sent through the output stream, the flush() method should be sent
 to the output stream so that the data is not buffered, but actually sent right away.
 
 You must be careful when using ObjectInputStreams and ObjectOutputStreams.
